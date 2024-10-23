@@ -1,7 +1,7 @@
-FROM --platform=linux/arm64 ubuntu:22.04
+FROM --platform=linux/amd64 ubuntu:22.04
 
 # Install Packages
-RUN apt-get update && apt-get install -y \
+RUN apt update && apt install -qy \
     git \
     wget \
     curl \
@@ -9,7 +9,7 @@ RUN apt-get update && apt-get install -y \
     python3-dev \
     build-essential \
     gdb \
-    binwak \
+    binwalk \
     && rm -rf /var/lib/apt/lists/*
 
 # Install Python Packages \
