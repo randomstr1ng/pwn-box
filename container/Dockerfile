@@ -18,7 +18,7 @@ RUN python3 -m pip install --upgrade \
     pwntools \
     -- break-system-packages
 
-Install gef
+# Install gef
 RUN bash -c "$(curl -fsSL https://gef.blah.cat/sh)"
 
 # Finish setup
