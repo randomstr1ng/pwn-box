@@ -1,7 +1,7 @@
 FROM --platform=linux/amd64 ubuntu:22.04
 
 # Install Packages
-RUN apt update && apt install -qy \
+RUN apt-get update && apt-get install -qy \
     git \
     wget \
     curl \
