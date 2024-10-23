@@ -8,6 +8,7 @@ RUN apt-get update && apt-get install -y \
     python3-dev \
     build-essential \
     gdb \
+    binwak \
     && rm -rf /var/lib/apt/lists/* \
 
 # Install Python Packages \
