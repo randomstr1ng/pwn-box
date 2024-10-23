@@ -1,4 +1,5 @@
 FROM --platform=linux/arm64 ubuntu:22.04
+
 # Install Packages
 RUN apt-get update && apt-get install -y \
     git \
