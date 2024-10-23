@@ -13,7 +13,7 @@ RUN echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selectio
     && rm -rf /var/lib/apt/lists/*
 
 # Install Python Packages
-RUN pip3 install pwntools --break-system-packages
+RUN pip3 install pwntools
 
 # Install gef
 RUN bash -c "$(curl -fsSL https://gef.blah.cat/sh)"
