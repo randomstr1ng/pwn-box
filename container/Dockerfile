@@ -10,13 +10,13 @@ RUN apt-get update && apt-get install -y \
     build-essential \
     gdb \
     binwak \
-    && rm -rf /var/lib/apt/lists/* \
+    && rm -rf /var/lib/apt/lists/*
 
 # Install Python Packages \
 RUN python3 -m pip install --upgrade \
     pip \
     pwntools \
-    -- break-system-packages
+    --break-system-packages
 
 # Install gef
 RUN bash -c "$(curl -fsSL https://gef.blah.cat/sh)"
