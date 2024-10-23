@@ -1,7 +1,7 @@
 FROM --platform=linux/amd64 ubuntu:22.04
 
 # Install Packages
-RUN echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selectionsapt-get && update && apt-get install -qy \
+RUN echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selections && apt-get update && apt-get install -qy \
     git \
     wget \
     curl \
