@@ -5,6 +5,7 @@ RUN echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selectio
     git \
     wget \
     curl \
+    nano \
     python3-pip \
     python3-dev \
     build-essential \
