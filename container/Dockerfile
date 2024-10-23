@@ -21,5 +21,5 @@ RUN bash -c "$(curl -fsSL https://gef.blah.cat/sh)"
 
 # Finish setup
 RUN echo "alias ll='ls -al --color=auto'" > /root/.bashrc
-RUN echo "export PS1='\e[0;32m\u@sap-attack-surface\e[m:\e[1;33m\w\e[m\n\$ '" >> /root/.bashrc
+RUN echo "export PS1='\e[0;32m\u@pwn\e[m:\e[1;33m\w\e[m\n\$ '" >> /root/.bashrc
 ENTRYPOINT ["/bin/bash"]
