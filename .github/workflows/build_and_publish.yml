@@ -3,7 +3,7 @@ name: build and publish Container image
 on:
   push:
     branches:
-      - 'master'
+      - 'main'
     paths:
       - 'container/**'
 
