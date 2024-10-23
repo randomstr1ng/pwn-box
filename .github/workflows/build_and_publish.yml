@@ -42,5 +42,5 @@ jobs:
           context: .
           push: true
           file: ./container/Dockerfile
-          tags: ghcr.io/pwn-box/pwn-box:latest
+          tags: ghcr.io/randomstr1ng/pwn-box:latest
           labels: ${{ steps.meta.outputs.labels }}
